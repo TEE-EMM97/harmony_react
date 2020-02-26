@@ -1,9 +1,10 @@
 import {
   FETCH_PRODUCTS,
+  GET_ITEM,
   FILTER_PRODUCTS_BY_SIZE,
   ORDER_PRODUCTS_BY_PRICE
 } from "../actions/types";
-const initialState = {items: [], filteredItems: [], size: '', sort: ''};
+const initialState = {itemId: [],items: [], filteredItems: [], size: '', sort: ''};
 
 export default function(state=initialState, action){
     switch (action.type) {
@@ -13,6 +14,12 @@ export default function(state=initialState, action){
           items: action.payload,
           filteredItems: action.payload
         };
+      case GET_ITEM:
+        return{
+          ...state,
+          itemId: action.payload,
+          filteredItems: action.payload
+        }
       case FILTER_PRODUCTS_BY_SIZE:
         return {
           ...state,

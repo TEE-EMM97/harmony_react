@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-import { Row, Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { filterProducts, sortProducts } from '../actions/productActions';
 
 class Filter extends Component {
@@ -8,6 +8,7 @@ class Filter extends Component {
     return (
       <div>
         <Row>
+
           <Col md={4}>{this.props.filteredProducts.length} Products Found.</Col>
           <Col md={4}>
             <label>
@@ -28,10 +29,7 @@ class Filter extends Component {
               </select>
             </label>
           </Col>
-          <Col md={4}></Col>
-        </Row>
 
-        <Row>
           <Col md={4}>
             <label>
               Filter By
@@ -52,7 +50,6 @@ class Filter extends Component {
               </select>
             </label>
           </Col>
-          <Col md={4}></Col>
         </Row>
       </div>
     );

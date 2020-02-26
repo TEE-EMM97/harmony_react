@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
+import {Col, Container} from 'react-bootstrap';
 import { connect } from "react-redux";
-import {removeFromCart} from '../../actions/cartActions'
-import util from "../../util";
+import {removeFromCart} from '../actions/cartActions';
+import {fetchProducts} from '../actions/productActions';
+import util from "../util";
 
 class Basket extends Component {
     render() {
-        const {cartItems} = this.props;
+        const { cartItems } = this.props;
         return (
-<div className="alert alert-info">
+         <Container>
+           <Col md={6}>
+            <div className="alert alert-info">
                 {cartItems.length === 0
                     ? "Basket is empty" :
                     <div>You have {cartItems.length} items in the basket. <hr /></div>
@@ -32,10 +36,15 @@ class Basket extends Component {
                     </div>
                 }
             </div>
+           
+           </Col> 
+
+         </Container>
         );
     }
 }
 const mapStateToProps = state => ({
-    cartItems: state.cart.items
-})
-export default connect(mapStateToProps, { removeFromCart })(Basket);
+  products: state.products.filteredItems,
+  cartItems: state.cart.items
+});
+export default connect(mapStateToProps, { fetchProducts, removeFromCart })(Basket);

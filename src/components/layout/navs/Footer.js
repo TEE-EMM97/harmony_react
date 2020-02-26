@@ -4,7 +4,7 @@ import {Row, Col} from 'react-bootstrap';
 function Footer() {
     return (
       <React.Fragment>
-        <footer className="pt-4 my-md-5 pt-md-5 border-top">
+        <footer className="pt-4 my-md-5 pt-md-5 border-top" style={{ backgroundColor: '#bdc3c7'}}>
           <div className="container">
 
           <Row>

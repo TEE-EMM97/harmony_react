@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown} from "react-bootstrap";
 import { Link } from "react-router-dom";
+// import Basket from '../Basket';
 
 function Header() {
     return (
@@ -33,7 +34,7 @@ function Header() {
               <Nav.Link eventKey={2} href="#memes">
                 Blog
               </Nav.Link>
-              <Nav.Link as={Link} to="/basket"href="#deets">Cart</Nav.Link>
+              <Nav.Link as={Link} to="/basket">Cart</Nav.Link>
               <Nav.Link eventKey={2} href="#memes">
                 My Account
               </Nav.Link>
