@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/harmony_react/static/css/main.da42f081.chunk.css",
+    "main.js": "/harmony_react/static/js/main.30f7e0de.chunk.js",
+    "main.js.map": "/harmony_react/static/js/main.30f7e0de.chunk.js.map",
+    "runtime-main.js": "/harmony_react/static/js/runtime-main.6ec6b328.js",
+    "runtime-main.js.map": "/harmony_react/static/js/runtime-main.6ec6b328.js.map",
+    "static/js/2.37db9986.chunk.js": "/harmony_react/static/js/2.37db9986.chunk.js",
+    "static/js/2.37db9986.chunk.js.map": "/harmony_react/static/js/2.37db9986.chunk.js.map",
+    "index.html": "/harmony_react/index.html",
+    "precache-manifest.15095fa6e0588fe1c1bd9e0f77eaf93a.js": "/harmony_react/precache-manifest.15095fa6e0588fe1c1bd9e0f77eaf93a.js",
+    "service-worker.js": "/harmony_react/service-worker.js",
+    "static/css/main.da42f081.chunk.css.map": "/harmony_react/static/css/main.da42f081.chunk.css.map",
+    "static/js/2.37db9986.chunk.js.LICENSE.txt": "/harmony_react/static/js/2.37db9986.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ec6b328.js",
+    "static/js/2.37db9986.chunk.js",
+    "static/css/main.da42f081.chunk.css",
+    "static/js/main.30f7e0de.chunk.js"
+  ]
+}

@@ -20,7 +20,6 @@ class App extends Component {
             <Route exact path="/products" component={Products}/> 
             <Route exact path="/products/:itemId" component={ProductPage} />
             <Route exact path="/basket" component={Basket}/> 
-
             </Switch>
             <Footer />
           </Router>
